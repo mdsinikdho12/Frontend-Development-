@@ -1,5 +1,7 @@
 import "./App.css";
 
+import RenderingLists from "./Components/RenderingLists";
+
 function Item({ name, isPacked }) {
   // controller/togical part
   const isCheckMark = isPacked ? "✅" : null;
@@ -42,6 +44,8 @@ function App() {
           <Item name={list.name} isPacked={list.isPacked} />
         ))}
       </ul>
+
+      <RenderingLists />
     </>
   );
 }
