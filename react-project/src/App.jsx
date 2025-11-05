@@ -1,6 +1,7 @@
 import "./App.css";
 
 import RenderingLists from "./Components/RenderingLists";
+import ManagingState from "./Components/ManagingState";
 
 function Item({ name, isPacked }) {
   // controller/togical part
@@ -46,6 +47,7 @@ function App() {
       </ul>
 
       <RenderingLists />
+      <ManagingState />
     </>
   );
 }
