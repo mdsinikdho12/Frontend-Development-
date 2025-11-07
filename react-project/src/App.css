@@ -1,20 +1,10 @@
+@import "tailwindcss";
 body {
   background: #5aafff;
-
-  color: #fff;
-
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-li {
-  font-weight: 200;
 }
 
-h1 {
-  color: #2b3233;
-}
-h2 {
-  color: #2b3233;
-}
-p {
-  color: #2b3233;
+.Todo-list {
+  width: 400px;
+
+  margin: 0 auto;
 }

@@ -2,22 +2,24 @@ import "./App.css";
 
 import RenderingLists from "./Components/RenderingLists";
 import ManagingState from "./Components/ManagingState";
+import Immutability from "./Components/Immutability";
+import TodoList from "./Components/TodoList";
 
-function Item({ name, isPacked }) {
-  // controller/togical part
-  const isCheckMark = isPacked ? "✅" : null;
+// function Item({ name, isPacked }) {
+//   // controller/togical part
+//   const isCheckMark = isPacked ? "✅" : null;
 
-  // Logical or oparator
-  //  const isCheckMark = isPacked && "✅" ;
+//   // Logical or oparator
+//   //  const isCheckMark = isPacked && "✅" ;
 
-  // view
-  return (
-    <li className="item">
-      {" "}
-      {name} {isCheckMark}
-    </li>
-  );
-}
+//   // view
+//   return (
+//     <li className="item">
+//       {" "}
+//       {name} {isCheckMark}
+//     </li>
+//   );
+// }
 
 function App() {
   const pasckingList = [
@@ -39,15 +41,17 @@ function App() {
   ];
   return (
     <>
-      <h1> Conditional Rendering</h1>
+      {/* <h1> Conditional Rendering</h1>
       <ul>
         {pasckingList.map((list) => (
           <Item name={list.name} isPacked={list.isPacked} />
         ))}
-      </ul>
+      </ul> */}
 
-      <RenderingLists />
+      {/* <RenderingLists />
       <ManagingState />
+      <Immutability /> */}
+      <TodoList />
     </>
   );
 }
